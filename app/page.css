@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.home-hero-section h1 {
+    font-family: 'Ibarra Real Nova' !important;
+    font-size: 68px;
+    font-weight: 100;
+    max-width: 780px;
+    text-align: center;
+}
+
+.home-hero-section p {
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 60px 20px;
+}
+
+.cta-btns-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 100px;
+}
+
+.btn {
+    width: 112px;
+    height: 41px;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.cta-contact {
+    color: black;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cta-pricing {
+    color: white;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cta-contact:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.cta-pricing:hover {
+    background-color: #383838;
+}

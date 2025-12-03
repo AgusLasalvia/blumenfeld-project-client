@@ -1,31 +1,31 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+'use client'
+
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import { usePathname } from "next/navigation";
+import Navbar from "@/components/ui/desktop/Navbar";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
-export const metadata: Metadata = {
-  title: "",
-  description: "",
-
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const pathname = usePathname();
+
+  // rutas que NO deben mostrar el navbar
+  const noNavbarRoutes = ["/auth/login", "/auth/signin"];
+  const hideNavbar = noNavbarRoutes.includes(pathname);
+
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+        <title>Blumenfeld Project</title>
+      </head>
+      <body >
+        {!hideNavbar && <Navbar />}
         {children}
       </body>
     </html>

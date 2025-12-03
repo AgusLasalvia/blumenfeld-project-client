@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 
+import "./page.css"
+
 interface LoginForm {
     username: string;
     password: string;
@@ -34,13 +36,13 @@ const LoginPage = () => {
     }
 
     return (
-        <section>
+        <section className="login">
             <div className="login-main-container">
                 <div className="login-inner-left">
-                    <h1>Login Page</h1>
+                    <h1>Login</h1>
                     <div className="login-form">
                         <div className="form-group">
-                            <i></i>
+                            <i><img src="/icons/user-icon.png" alt="user icon" /></i>
                             <input
                                 type="text"
                                 placeholder="Username"
@@ -49,7 +51,7 @@ const LoginPage = () => {
                             />
                         </div>
                         <div className="form-group">
-                            <i></i>
+                            <i><img src="/icons/lock-icon.png" alt="password icon" /></i>
                             <input
                                 type="text"
                                 placeholder="Password"
@@ -58,16 +60,17 @@ const LoginPage = () => {
                         </div>
                         <input type="submit" onClickCapture={handdleSubmit} value="Log In" />
                     </div>
-                    <a href="/account-recovery">Forgot your Password?</a>
+                    <a href="/recovery">Forgot your Password?</a>
 
                     <div className="signup-redirect">
                         <p>Don't have an account?</p>
                         <a href="/signup">Sign Up</a>
                     </div>
                 </div>
-                <div className="login-inner-right">
-                    <Image src="" alt="" />
-                </div>
+                <figure className="login-banner">
+                    <img src="/assets/login-right-banner.png" alt="" />
+                </figure>
+
             </div>
         </section>
     )
