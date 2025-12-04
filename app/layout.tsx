@@ -1,11 +1,13 @@
-'use client'
-
 import "./globals.css";
 
-import { usePathname } from "next/navigation";
 import Navbar from "@/components/ui/desktop/Navbar";
 
 
+
+export const metadata = {
+  title: "Blumenfeld Project",
+  description: "Project management tool",
+};
 
 export default function RootLayout({
   children,
@@ -13,11 +15,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const pathname = usePathname();
-
-  // rutas que NO deben mostrar el navbar
-  const noNavbarRoutes = ["/auth/login", "/auth/signup", "/auth/recovery"];
-  const hideNavbar = noNavbarRoutes.includes(pathname);
 
   return (
     <html lang="en">
@@ -25,7 +22,7 @@ export default function RootLayout({
         <title>Blumenfeld Project</title>
       </head>
       <body >
-        {!hideNavbar && <Navbar />}
+        <Navbar />
         {children}
       </body>
     </html>

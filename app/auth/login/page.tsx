@@ -39,6 +39,11 @@ const LoginPage = () => {
         <section className="login">
             <div className="login-main-container fade-in-up">
                 <div className="login-inner-left">
+                    <div className="login-top-container">
+                        <a href="/" className="login-back-btn">
+                            <i><img src="/icons/arrow-left.png" alt="" /></i>
+                        </a>
+                    </div>
                     <h1>Login</h1>
                     <div className="login-form">
                         <div className="form-group">
