@@ -1,4 +1,4 @@
-.login {
+.signup {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,23 +7,23 @@
 }
 
 
-.login h1 {
+.signup h1 {
     font-size: 40px;
     margin-bottom: 20px;
     color: #252525;
 }
 
-.login a {
+.signup a {
     text-decoration: none;
     color: black;
 }
 
 
-.login p {
+.signup p {
     color: #AEAEAE;
 }
 
-.login-main-container {
+.signup-main-container {
     display: flex;
     width: 100%;
     height: 100%;
@@ -39,7 +39,7 @@
 
 
 
-.login-inner-left {
+.signup-inner-left {
     width: 100%;
     max-width: 667px;
     display: flex;
@@ -50,7 +50,7 @@
 }
 
 
-.login-banner {
+.signup-banner {
     display: block;
     width: 609px;
     height: 722px;
@@ -68,7 +68,7 @@
     max-width: 360px;
 }
 
-.login-form {
+.signup-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,8 +95,16 @@
     width: 30px;
 }
 
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
 
-.signup-redirect {
+
+.login-redirect {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +112,7 @@
 }
 
 .form-submit-btn {
-    margin-top: 50px;
+    margin-top: 35px;
     width: 100%;
     max-width: 248px;
     height: 48px;
@@ -116,14 +124,7 @@
 }
 
 
-.login-extra-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 15px;
-    gap: 10px;
-}
+
 
 
 

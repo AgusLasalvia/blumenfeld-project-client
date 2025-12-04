@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import { useState } from "react";
 
 import "./page.css"
@@ -18,6 +17,7 @@ const LoginPage = () => {
     })
 
     const handdleSubmit = async () => {
+
         const response = await fetch("",
             {
                 headers: {
@@ -37,7 +37,7 @@ const LoginPage = () => {
 
     return (
         <section className="login">
-            <div className="login-main-container">
+            <div className="login-main-container fade-in-up">
                 <div className="login-inner-left">
                     <h1>Login</h1>
                     <div className="login-form">
@@ -47,24 +47,29 @@ const LoginPage = () => {
                                 type="text"
                                 placeholder="Username"
                                 value={loginForm.username}
+                                maxLength={30}
                                 onChange={(e) => setLoginForm({ ...loginForm, username: e.target.value })}
                             />
                         </div>
                         <div className="form-group">
                             <i><img src="/icons/lock-icon.png" alt="password icon" /></i>
                             <input
-                                type="text"
+                                type="password"
                                 placeholder="Password"
                                 value={loginForm.password}
+                                maxLength={18}
                                 onChange={(e) => setLoginForm({ ...loginForm, password: e.target.value })} />
                         </div>
-                        <input type="submit" onClickCapture={handdleSubmit} value="Log In" />
+                        <input className="form-submit-btn" type="submit" onClickCapture={handdleSubmit} value="Log In" />
                     </div>
-                    <a href="/recovery">Forgot your Password?</a>
+                    <div className="login-extra-links">
+                        <a href="/auth/recovery">Forgot your Password?</a>
 
-                    <div className="signup-redirect">
-                        <p>Don't have an account?</p>
-                        <a href="/signup">Sign Up</a>
+                        <div className="signup-redirect">
+                            <p>Don't have an account?</p>
+                            <a href="/auth/signup">Sign Up</a>
+                        </div>
+
                     </div>
                 </div>
                 <figure className="login-banner">

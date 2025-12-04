@@ -16,7 +16,7 @@ export default function RootLayout({
   const pathname = usePathname();
 
   // rutas que NO deben mostrar el navbar
-  const noNavbarRoutes = ["/auth/login", "/auth/signin"];
+  const noNavbarRoutes = ["/auth/login", "/auth/signup", "/auth/recovery"];
   const hideNavbar = noNavbarRoutes.includes(pathname);
 
   return (
