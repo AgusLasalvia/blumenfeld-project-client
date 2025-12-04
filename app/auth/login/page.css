@@ -132,3 +132,25 @@ figure {
     margin: 0;
     padding: 0;
 }
+
+@media (max-width:1300px) {
+
+    section {
+        height: 100dvh !important;
+    }
+
+    .login-main-container {
+        max-width: 90%;
+        min-width: 337px;
+        min-height: 500px;
+        height: 100%;
+    }
+
+    .login-inner-left {
+        max-width: 100%;
+    }
+
+    .login-banner {
+        display: none !important;
+    }
+}

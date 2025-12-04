@@ -123,13 +123,30 @@
     border-radius: 10px;
 }
 
-
-
-
-
-
 img,
 figure {
     margin: 0;
     padding: 0;
+}
+
+@media (max-width:1300px) {
+
+    section {
+        height: 100dvh !important;
+    }
+
+    .signup-main-container {
+        max-width: 90%;
+        min-width: 337px;
+        min-height: 500px;
+        height: 100%;
+    }
+
+    .signup-inner-left {
+        max-width: 100%;
+    }
+
+    .signup-banner {
+        display: none !important;
+    }
 }
