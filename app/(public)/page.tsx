@@ -1,4 +1,3 @@
-import Navbar from "@/components/ui/desktop/Navbar";
 import "./page.css"
 
 const HomePage = () => {
