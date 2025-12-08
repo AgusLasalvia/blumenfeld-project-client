@@ -5,3 +5,47 @@
     justify-content: center;
     align-items: center;
 }
+
+.recovery-container {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    justify-content: flex-start;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+@media (max-width:1300px) {
+
+
+    .recovery-container {
+        max-width: 90%;
+        min-width: 337px;
+        min-height: 600px;
+
+    }
+
+    .recovery-container p {
+        text-align: center !important;
+    }
+
+    .recovery-container .form {
+        width: 90%;
+        margin-top: 80px;
+    }
+
+
+
+}

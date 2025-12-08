@@ -1,6 +1,7 @@
 "use client"
 
 import "./page.css"
+import "@styles/ReturnArrow.css"
 
 import { useState } from "react";
 
@@ -54,8 +55,8 @@ const SignUpPage = () => {
         <section className="signup">
             <div className="signup-main-container fade-in-up">
                 <div className="signup-inner-left">
-                    <div className="signup-top-container">
-                        <a href="/" className="login-back-btn">
+                    <div className="arrow-top-container">
+                        <a href="/login" className="login-back-btn">
                             <i><img src="/icons/arrow-left.png" alt="" /></i>
                         </a>
                     </div>

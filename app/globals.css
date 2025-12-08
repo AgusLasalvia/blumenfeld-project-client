@@ -40,6 +40,54 @@ header {
 }
 
 
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 360px;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 5px;
+    height: 34px;
+    border: none;
+    border-bottom: 2px solid #252525;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-group i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-submit-btn {
+    margin-top: 35px;
+    width: 100%;
+    max-width: 248px;
+    height: 48px;
+    color: white;
+    background-color: #252525;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
 @media (max-width: 890px) {
     body {
         padding: 0;

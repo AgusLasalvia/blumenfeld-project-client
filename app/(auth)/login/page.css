@@ -9,6 +9,7 @@
 
 .login h1 {
     font-size: 40px;
+    margin-top: 100px;
     margin-bottom: 20px;
     color: #252525;
 }
@@ -49,28 +50,6 @@
     background-color: white;
 }
 
-.login-top-container {
-    margin-top: 20px;
-    width: 90%;
-    margin-bottom: 100px;
-}
-
-.login-top-container a {
-    color: black;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-}
-
-.login-top-container i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .login-banner {
     display: block;

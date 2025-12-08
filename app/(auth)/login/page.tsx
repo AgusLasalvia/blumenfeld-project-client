@@ -1,8 +1,9 @@
 "use client"
 
-import { useState } from "react";
-
+import "@styles/ReturnArrow.css"
 import "./page.css"
+
+import { useState } from "react";
 
 interface LoginForm {
     username: string;
@@ -37,7 +38,7 @@ const LoginPage = () => {
         <section className="login">
             <div className="login-main-container fade-in-up">
                 <div className="login-inner-left">
-                    <div className="login-top-container">
+                    <div className="arrow-top-container">
                         <a href="/" className="login-back-btn">
                             <i><img src="/icons/arrow-left.png" alt="" /></i>
                         </a>
