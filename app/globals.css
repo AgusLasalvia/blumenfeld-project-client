@@ -88,6 +88,7 @@ header {
 }
 
 
+
 @media (max-width: 890px) {
     body {
         padding: 0;
@@ -102,11 +103,34 @@ header {
 }
 
 
+/* Messages color coding */
+
+.error-message {
+    color: rgb(235, 73, 73);
+    font-weight: bold;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+
+
+
+
+/* Animations */
 
 .fade-in-up {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+.fade-in-up-fast {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.3s ease-out forwards;
 }
 
 @keyframes fadeInUp {

@@ -36,9 +36,10 @@ const Hamburguer = () => {
 
                 <div className="menu-center">
                     <Link href="/">Home</Link>
+                    <Link href="/product">Product</Link>
                     <Link href="/#faq">FAQ</Link>
                     <Link href="/about">About</Link>
-                    <Link href="/contact">Contact</Link>
+
                 </div>
 
                 <div className="menu-bottom">
